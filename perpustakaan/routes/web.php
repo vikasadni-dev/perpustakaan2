@@ -2,10 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BookController;
-
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Http\Controllers\MemberController;
+use App\Http\Controllers\LoanController;
 
 Route::resource('books', BookController::class);
-
+Route::resource('members', MemberController::class);
+Route::resource('loans', LoanController::class);
