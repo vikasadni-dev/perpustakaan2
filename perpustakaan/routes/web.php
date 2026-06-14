@@ -10,3 +10,4 @@ Route::resource('members', MemberController::class);
 Route::resource('loans', LoanController::class);
 // route khusus pengembalian
 Route::get('loans/{id}/return', [LoanController::class, 'returnBook'])->name('loans.return');
+

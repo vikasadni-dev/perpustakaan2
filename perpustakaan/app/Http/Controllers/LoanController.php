@@ -114,4 +114,6 @@ class LoanController extends Controller
 
         return redirect()->route('loans.index')->with('success', 'Buku berhasil dikembalikan');
     }
+
+
 }
